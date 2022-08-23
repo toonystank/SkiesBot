@@ -1,0 +1,21 @@
+
+# Discord bot token
+discord_token: 00000000
+commands:
+  Prefix: !
+  Unknown: "Command not found"
+Modules:
+  - Announcement-inchannel.yml
+  - Suggestions-inchannel.yml
+  - Userjoin.yml
+
+
+# Default Embed data will be used for Suggestion/Announcement/Say command Embeds
+Default_Embed:
+  Color: #ff0000
+  Footer:
+    Text: SkiesMC
+    Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
+  Author:
+    Name: {user}
+    Icon: {useravatar}

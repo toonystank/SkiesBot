@@ -1,0 +1,5 @@
+name: SkiesBot
+version: '${project.version}'
+main: com.edward.skiesbot.SkiesBot
+api-version: 1.17
+load: STARTUP

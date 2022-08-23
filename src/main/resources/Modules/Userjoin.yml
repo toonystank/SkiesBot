@@ -1,0 +1,25 @@
+# Available Placeholders
+# {user} - User name
+# {mentionuser} - Ping the user
+# {useravatar} - User avatar
+module:
+  event:
+    type: JOIN
+    channel: "877443938640871466"
+data:
+  # Plain text message
+  Message:
+    Enable: false
+    Message: "`{user}` Joined the server"
+  # Embed Message
+  Embed:
+    Enable: true
+    Message: "`{user}` Joined the server"
+    description:
+      - {mentionuser} joined the server
+      - This is a multi-line embed description.
+      - This is the third line of the embed description.
+    Footer:
+      Text: SkiesMC
+      Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
+    Thumbnail: {UserAvatar}

@@ -1,0 +1,41 @@
+# Available Placeholders
+# {user} - User name
+# {mentionuser} - Ping the user
+# {useravatar} - User avatar
+module:
+  event:
+    type: MESSAGE_RECEIVED_IN_CHANNEL
+    channel: "877443938640871466"
+data:
+  # Plain text message
+  Message:
+    Enable: false
+    Message: {message}
+  # Embed Message
+  Embed:
+    Enable: true
+    Title: Suggestion from {user}
+    description: {message}
+    Footer:
+      Text: SkiesMC
+      Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
+    Thumbnail: {user_avatar}
+  Actions:
+    "1":
+      type: Reaction
+      data:
+        "✅":
+          click:
+            Embed:
+              Title: "Suggestion Accepted"
+              color: "GREEN"
+      "❌":
+        Click:
+          Embed:
+            Title: "Suggestion Rejected"
+            color: "RED"
+        "🕓":
+          Click:
+            Embed:
+              Title: "Suggestion Pending"
+              color: "YELLOW"
