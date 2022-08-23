@@ -8,9 +8,6 @@ module:
     channel: "877443938640871466"
 data:
   # Plain text message
-  Message:
-    Enable: false
-    Message: {message}
   # Embed Message
   Embed:
     Enable: true
@@ -29,11 +26,11 @@ data:
             Embed:
               Title: "Suggestion Accepted"
               color: "GREEN"
-      "❌":
-        Click:
-          Embed:
-            Title: "Suggestion Rejected"
-            color: "RED"
+        "❌":
+          Click:
+            Embed:
+              Title: "Suggestion Rejected"
+              color: "RED"
         "🕓":
           Click:
             Embed:

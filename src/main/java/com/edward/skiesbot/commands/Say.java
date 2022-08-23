@@ -25,7 +25,7 @@ public class Say {
         if (!Objects.requireNonNull(event.getMember()).hasPermission(Permission.MANAGE_CHANNEL)) return;
         event.getMessage().delete().queue();
         EmbedBuilder embed = new EmbedBuilder();
-        DefaultEmbed.setDefault(embed,event);
+        DefaultEmbed.setDefault(embed);
 
         String[] args = event.getMessage().getContentRaw().split(" ");
         TextChannel channel;

@@ -17,13 +17,14 @@ data:
   Embed:
     Enable: true
     Title: Announcement from {user}
-    description: {message}
+    description:
+      - {message}
     Footer:
       Text: SkiesMC
       Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
     Thumbnail: {UserAvatar}
   Action:
-    Enable: true
+    Enable: truet
     "1":
       Type: Mention
       data:

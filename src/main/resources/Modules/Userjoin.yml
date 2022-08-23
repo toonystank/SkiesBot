@@ -15,7 +15,7 @@ data:
   Embed:
     Enable: true
     Message: "`{user}` Joined the server"
-    description:
+    Description:
       - {mentionuser} joined the server
       - This is a multi-line embed description.
       - This is the third line of the embed description.

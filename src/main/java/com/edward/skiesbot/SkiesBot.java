@@ -50,7 +50,7 @@ public final class SkiesBot extends JavaPlugin {
 
         try {
             this.getLogger().info("Starting JDA...");
-            jda = JDABuilder.createDefault(mainConfig.getString("token")).enableIntents(GatewayIntent.GUILD_MEMBERS).build();
+            jda = JDABuilder.createDefault(mainConfig.getString("token")).enableIntents(GatewayIntent.GUILD_MESSAGES, GatewayIntent.DIRECT_MESSAGES, GatewayIntent.GUILD_MEMBERS).build();
         } catch (LoginException e) {
             e.printStackTrace();
             this.setEnabled(false);
