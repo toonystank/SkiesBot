@@ -1,11 +1,9 @@
-package com.edward.skiesbot.utils;
+package com.edward.skiesbot.modules;
 
 import com.edward.skiesbot.SkiesBot;
-import com.edward.skiesbot.utils.enums.ModuleDataType;
 import com.edward.skiesbot.utils.enums.ModuleOptions;
 import com.edward.skiesbot.utils.enums.ModuleType;
 import com.taggernation.taggernationlib.config.ConfigManager;
-import org.bukkit.plugin.Plugin;
 
 import java.io.IOException;
 import java.util.Locale;
@@ -13,10 +11,10 @@ import java.util.Locale;
 public class Modules extends ConfigManager {
 
 
-    private SkiesBot plugin;
-    private ModuleType type;
-    private ModuleOptions optionType;
-    private String optionValue;
+    private final SkiesBot plugin;
+    private final ModuleType type;
+    private final ModuleOptions optionType;
+    private final String optionValue;
     private boolean message;
     private boolean embed;
     private boolean action;
