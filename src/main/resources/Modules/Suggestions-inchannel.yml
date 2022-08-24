@@ -5,11 +5,14 @@
 module:
   event:
     type: MESSAGE_RECEIVED_IN_CHANNEL
-    channel: "877443938640871466"
+    log: true
+    data:
+      option: channel
+      value: "877443938640871466"
 data:
-  # Plain text message
   # Embed Message
   Embed:
+    log: true
     Enable: true
     Title: Suggestion from {user}
     description: {message}
@@ -18,6 +21,7 @@ data:
       Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
     Thumbnail: {user_avatar}
   Actions:
+    Enable: true
     "1":
       type: Reaction
       data:

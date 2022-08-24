@@ -5,7 +5,9 @@
 module:
   event:
     type: JOIN
-    channel: "877443938640871466"
+    data:
+      option: channel
+      value: "877443938640871466"
 data:
   # Plain text message
   Message:

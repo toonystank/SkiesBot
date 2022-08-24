@@ -5,8 +5,9 @@
 module:
   event:
     type: MESSAGE_RECEIVED_IN_CHANNEL
-    option:
-      type: channel
+    log: false
+    data:
+      option: channel
       value: "877443938640871466"
 data:
   # Plain text message
@@ -24,9 +25,10 @@ data:
       Icon: "https://media.discordapp.net/attachments/958642856246009877/960509399674286220/server-icon.png"
     Thumbnail: {UserAvatar}
   Action:
-    Enable: truet
+    Enable: true
     "1":
       Type: Mention
       data:
         everyone: true
+        # to disable set to 0
         delete_after: 5
